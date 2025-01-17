@@ -1,15 +1,19 @@
 {
-  "name": "mone-tailwind",
+  "name": "NoelMutiaPortfolio",
   "version": "1.0.0",
-  "description": "Tailwind Personal Portfolio Template",
+  "description": "Personal Portfolio Template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./src/input.css -o ./assets/style.css --watch"
   },
-  "author": "FlaTheme",
-  "license": "ISC",
+  "author": "leonphoenix",
+  "license": "MIT",
   "devDependencies": {
-    "tailwindcss": "^3.4.14"
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1"
   }
 }
