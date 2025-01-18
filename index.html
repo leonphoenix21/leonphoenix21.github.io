@@ -392,14 +392,95 @@
 
 
 
-	</div>
+		<!-- Project Management Tools Section -->
+		<div id="project-management-tools"
+			class="container max-w-[1320px] mx-auto px-5 md:px-10 xl:px-5 py-24 xl:py-28">
+			<h2 class="font-outfit font-medium text-4xl md:text-5xl lg:text-6xl text-white mt-2 text-center m20">
+				Project Management <span class="bg-themeGradient bg-clip-text text-transparent ">Tools</span>
+			</h2>
+
+			<div class="swiper project-management-tools-slider relative pb-14 lg:pb-16 flex flex-row-reverse m20">
+				<div class="swiper-wrapper mt-8">
+					<!-- Jira -->
+					<div class="swiper-slide">
+						<div class="text-center">
+							<img class="mx-auto" src="https://cdn.worldvectorlogo.com/logos/jira-1.svg" alt="Jira"
+								width="150" height="150">
+							<p class="font-outfit text-xl text-white mt-4">Jira</p>
+						</div>
+					</div>
+					<!-- Trello -->
+					<div class="swiper-slide">
+						<div class="text-center">
+							<img class="mx-auto" src="assets/images/Logo/trello.png" alt="Trello" width="150"
+								height="150">
+							<p class="font-outfit text-xl text-white mt-4">Trello</p>
+						</div>
+					</div>
+					<!-- Asana -->
+					<div class="swiper-slide mt-2">
+						<div class="text-center">
+							<img class="mx-auto" src="https://cdn.worldvectorlogo.com/logos/asana-logo.svg" alt="Asana"
+								width="150" height="150">
+							<p class="font-outfit text-xl text-white mt-4">Asana</p>
+						</div>
+					</div>
+					<!-- Slack -->
+					<div class="swiper-slide">
+						<div class="text-center">
+							<img class="mx-auto"
+								src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack"
+								width="150" height="150">
+							<p class="font-outfit text-xl text-white mt-4">Slack</p>
+						</div>
+					</div>
+					<!-- Notion -->
+					<div class="swiper-slide">
+						<div class="text-center">
+							<img class="mx-auto"
+								src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
+								alt="Notion" width="150" height="150">
+							<p class="font-outfit text-xl text-white mt-4">Notion</p>
+						</div>
+					</div>
+					<!-- Microsoft Teams -->
+					<div class="swiper-slide">
+						<div class="text-center">
+							<img class="mx-auto" src="https://cdn.worldvectorlogo.com/logos/microsoft-teams-1.svg"
+								alt="Microsoft Teams" width="150" height="150">
+							<p class="font-outfit text-xl text-white mt-4">Microsoft Teams</p>
+						</div>
+					</div>
+					<!-- GitLab -->
+					<div class="swiper-slide mt-2">
+						<div class="text-center ">
+							<img class="mx-auto" src="assets/images/Logo/gitlab-logo.png" alt="GitLab" width="150"
+								height="150">
+							<p class="font-outfit text-xl text-white mt-4">GitLab</p>
+						</div>
+					</div>
+					<!-- Microsoft Excel -->
+					<div class="swiper-slide">
+						<div class="text-center">
+							<img class="mx-auto" src="assets/images/Logo/excel-logo.png" alt="Microsoft Excel"
+								width="150" height="150">
+							<p class="font-outfit text-xl text-white mt-4">Microsoft Excel</p>
+						</div>
+					</div>
+
+				</div>
+				<!-- Slider Pagination Progress -->
+				<div class="swiper-project-management-tools-pagination swiper-pagination-progressbar"></div>
+			</div>
+
+		</div>
 
 
 
 
 
 
-	<!-- end Clients section -->
+		<!-- end Clients section -->
 
 	</div> <!-- container -->
 
@@ -1032,11 +1113,14 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-80OhMR0Q_tr8lz3Eyw-YTyeRr-9Dd64"></script>
 	<script src="assets/plugins/plugins.js"></script>
 	<script src="assets/functions.js"></script>
+	<!-- JavaScripts -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script>
+		// Tech Stack Slider
 		const techStackSwiper = new Swiper('.tech-stack-slider', {
 			loop: true,
-			slidesPerView: 4, // Show 4 slides at a time
-			spaceBetween: 30, // Space between slides
+			slidesPerView: 4,
+			spaceBetween: 30,
 			pagination: {
 				el: '.swiper-tech-stack-pagination',
 				type: 'progressbar',
@@ -1047,21 +1131,50 @@
 			},
 			breakpoints: {
 				640: {
-					slidesPerView: 1, // 1 slide for small screens
+					slidesPerView: 1,
 					spaceBetween: 20,
 				},
 				768: {
-					slidesPerView: 2, // 2 slides for medium screens
+					slidesPerView: 2,
 					spaceBetween: 30,
 				},
 				1024: {
-					slidesPerView: 4, // 4 slides for large screens
+					slidesPerView: 4,
 					spaceBetween: 40,
 				},
 			},
 		});
 
+		// Project Management Tools Slider
+		const projectManagementToolsSwiper = new Swiper('.project-management-tools-slider', {
+			loop: true,
+			slidesPerView: 4,
+			spaceBetween: 30,
+			pagination: {
+				el: '.swiper-project-management-tools-pagination',
+				type: 'progressbar',
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+				640: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+				},
+				1024: {
+					slidesPerView: 4,
+					spaceBetween: 40,
+				},
+			},
+		});
 	</script>
+
 
 
 </body>
