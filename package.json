@@ -1,5 +1,5 @@
 {
-  "name": "NoelMutiaPortfolio",
+  "name": "leonphoenix21",
   "version": "1.0.0",
   "description": "Personal Portfolio Template",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./src/input.css -o ./assets/style.css --watch"
   },
-  "author": "leonphoenix",
+  "author": "leonphoenix21",
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.4.17"
